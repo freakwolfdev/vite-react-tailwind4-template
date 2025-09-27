@@ -1,14 +1,14 @@
-# React + TypeScript + Vite + Tailwind CSS 4 + Biome
+# Vite + React + Tailwind CSS 4 + Biome
 
 A modern, fast, and opinionated React development template with the latest tools and best practices.
 
 ## 🚀 Tech Stack
 
-- **[Vite](https://vitejs.dev/)** - Next generation frontend tooling
-- **[React 19](https://react.dev/)** - UI library with latest features
-- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Tailwind CSS 4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Biome](https://biomejs.dev/)** - Fast formatter and linter
+- **[Vite 7.1.2](https://vitejs.dev/)** - Next generation frontend tooling
+- **[React 19.1.1](https://react.dev/)** - UI library with latest features
+- **[TypeScript 5.8.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Tailwind CSS 4.1.13](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Biome 2.2.4](https://biomejs.dev/)** - Fast formatter and linter
 - **[Bun](https://bun.sh/)** - Fast JavaScript runtime and package manager
 
 ## ✨ Features
@@ -53,14 +53,14 @@ A modern, fast, and opinionated React development template with the latest tools
 bun run dev          # Start development server with HMR
 
 # Building
-bun run build        # Build for production
+bun run build        # Build for production (TypeScript + Vite)
 bun run preview      # Preview production build
 
 # Code Quality
-bun run lint         # Run type checking and linting
+bun run lint         # Run Biome linting on ./src
 bun run lint:fix     # Fix linting issues automatically
 bun run format       # Format code with Biome
-bun run check        # Run all checks and fixes
+bun run check        # Run all checks and fixes (recommended)
 ```
 
 ## 🎨 Styling with Tailwind CSS 4
@@ -117,16 +117,16 @@ The project includes a comprehensive Biome configuration in `biome.json`:
 ### Running Biome
 
 ```bash
-# Check for issues
+# Check for issues (linting only)
 bun run lint
 
-# Fix issues automatically
+# Fix linting issues automatically
 bun run lint:fix
 
-# Format code
+# Format code only
 bun run format
 
-# Run all checks and fixes
+# Run all checks and fixes (recommended)
 bun run check
 ```
 
@@ -138,6 +138,13 @@ src/
 ├── main.tsx         # Application entry point
 ├── index.css        # Global styles and Tailwind imports
 └── vite-env.d.ts    # Vite type definitions
+
+Configuration files:
+├── biome.json       # Biome configuration (linting & formatting)
+├── .biomeigone      # Biome ignore patterns
+├── vite.config.ts   # Vite configuration
+├── tsconfig.json    # TypeScript configuration
+└── package.json     # Dependencies and scripts
 ```
 
 ## 🚀 Deployment
@@ -180,6 +187,7 @@ bun run preview
 - Use **TypeScript** strict mode
 - Follow **React** best practices
 - Write **accessible** components
+- Run `bun run check` before commits
 
 ## 🔗 Useful Links
 
