@@ -88,14 +88,11 @@
     "lineWidth": 80,
     "formatWithErrors": true,
     "includes": [
-      "**",
+      "**/*.{js,ts,jsx,tsx,json,jsonc,css,md}",
       "!**/node_modules/**",
-      "!**/build/**",
+      "!**/dist/**",
       "!**/coverage/**",
-      "!**/.next/**",
-      "!**/public/**",
-      "!**/src/lib/$path.ts",
-      "!**/eslint.config.mjs"
+      "!**/build/**"
     ]
   },
   "javascript": {
