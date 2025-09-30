@@ -22,6 +22,8 @@ A modern, fast, and opinionated React development template with the latest tools
 - 🔄 **Hot Module Replacement (HMR)** for instant updates
 - 📱 **Responsive design** ready
 - 🎨 **Modern CSS utilities** with `clsx` and `tailwind-merge`
+- 🛡️ **Pre-commit hooks** with TypeScript type checking and linting
+- 🚫 **Commit protection** - prevents commits with errors
 
 ## 🛠️ Development
 
@@ -61,6 +63,11 @@ bun run lint         # Run Biome linting on ./src
 bun run lint:fix     # Fix linting issues automatically
 bun run format       # Format code with Biome
 bun run check        # Run all checks and fixes (recommended)
+bun run type-check   # Run TypeScript type checking
+
+# Git Hooks
+bun run prepare      # Install husky git hooks
+bun run pre-commit   # Run pre-commit checks (lint-staged)
 ```
 
 ## 🎨 Styling with Tailwind CSS 4
@@ -130,6 +137,46 @@ bun run format
 bun run check
 ```
 
+## 🛡️ Pre-Commit Hooks
+
+This project includes **pre-commit hooks** that automatically run before every commit to ensure code quality:
+
+### What Gets Checked
+
+- **TypeScript Type Checking** - Prevents commits with type errors
+- **Biome Linting** - Code quality and style checks
+- **Automatic Formatting** - Fixes code style issues
+- **Error Blocking** - Commits are blocked if errors are found
+
+### How It Works
+
+1. **Before every commit**, the system automatically runs:
+   - `bun run type-check` - TypeScript type checking
+   - `bun run pre-commit` - Biome linting and formatting
+
+2. **If errors are found**:
+   - ❌ Commit is blocked
+   - 📋 Error details are shown
+   - 🔄 Files are reverted to original state
+   - ✅ You must fix errors before committing
+
+3. **If all checks pass**:
+   - ✅ Commit proceeds normally
+   - 🎨 Files are automatically formatted
+
+### Manual Testing
+
+```bash
+# Test pre-commit hooks manually
+bun run pre-commit
+
+# Run type checking only
+bun run type-check
+
+# Run all quality checks
+bun run check
+```
+
 ## 📁 Project Structure
 
 ```
@@ -144,7 +191,9 @@ Configuration files:
 ├── .biomeigone      # Biome ignore patterns
 ├── vite.config.ts   # Vite configuration
 ├── tsconfig.json    # TypeScript configuration
-└── package.json     # Dependencies and scripts
+├── package.json     # Dependencies and scripts
+└── .husky/          # Git hooks directory
+    └── pre-commit   # Pre-commit hook with type checking
 ```
 
 ## 🚀 Deployment
@@ -187,7 +236,8 @@ bun run preview
 - Use **TypeScript** strict mode
 - Follow **React** best practices
 - Write **accessible** components
-- Run `bun run check` before commits
+- **Pre-commit hooks** automatically check code quality
+- Run `bun run check` before commits (optional - hooks handle this)
 
 ## 🔗 Useful Links
 
