@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+body {
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+code {
+  font-family: "Fira Code", "JetBrains Mono", "Courier New", monospace;
+}
