@@ -21,7 +21,7 @@ A modern, fast, and opinionated React development template with the latest tools
 - 🎯 **TypeScript** for type safety
 - 🔄 **Hot Module Replacement (HMR)** for instant updates
 - 📱 **Responsive design** ready
-- 🎨 **Modern CSS utilities** with `clsx` and `tailwind-merge`
+- 🎨 **Modern CSS utilities** with Tailwind CSS 4
 - 🛡️ **Pre-commit hooks** with TypeScript type checking and linting
 - 🚫 **Commit protection** - prevents commits with errors
 
@@ -79,13 +79,11 @@ This project uses **Tailwind CSS 4** with the new Vite plugin for optimal perfor
 function Button({ variant = 'primary', children, ...props }) {
   return (
     <button
-      className={clsx(
-        'px-4 py-2 rounded-lg font-medium transition-colors',
-        {
-          'bg-blue-600 text-white hover:bg-blue-700': variant === 'primary',
-          'bg-gray-200 text-gray-900 hover:bg-gray-300': variant === 'secondary',
-        }
-      )}
+      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+        variant === 'primary'
+          ? 'bg-blue-600 text-white hover:bg-blue-700'
+          : 'bg-gray-200 text-gray-900 hover:bg-gray-300'
+      }`}
       {...props}
     >
       {children}

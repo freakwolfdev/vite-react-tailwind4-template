@@ -74,7 +74,7 @@
           "fix": "safe",
           "options": {
             "attributes": ["className", "classList", "panelClassName"],
-            "functions": ["cx", "clsx", "cva", "tw", "twMerge"]
+            "functions": ["cx", "cva", "tw"]
           }
         }
       }
