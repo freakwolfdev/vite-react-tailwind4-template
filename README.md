@@ -8,7 +8,7 @@ A modern, fast, and opinionated React development template with the latest tools
 - **[React 19.2.0](https://react.dev/)** - UI library with latest features
 - **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
 - **[Tailwind CSS 4.1.14](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Biome 2.2.5](https://biomejs.dev/)** - Fast formatter and linter
+- **[Biome 2.2.6](https://biomejs.dev/)** - Fast formatter and linter
 - **[Bun](https://bun.sh/)** - Fast JavaScript runtime and package manager
 
 ## ✨ Features
