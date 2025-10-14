@@ -26,7 +26,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Vite 7.1.9</code>
+                  <code className="text-blue-400">Vite 7.1.10</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Next generation frontend tooling with lightning-fast HMR

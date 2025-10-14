@@ -4,7 +4,7 @@ A modern, fast, and opinionated React development template with the latest tools
 
 ## 🚀 Tech Stack
 
-- **[Vite 7.1.9](https://vitejs.dev/)** - Next generation frontend tooling
+- **[Vite 7.1.10](https://vitejs.dev/)** - Next generation frontend tooling
 - **[React 19.2.0](https://react.dev/)** - UI library with latest features
 - **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
 - **[Tailwind CSS 4.1.14](https://tailwindcss.com/)** - Utility-first CSS framework
