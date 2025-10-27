@@ -4,11 +4,11 @@ A modern, fast, and opinionated React development template with the latest tools
 
 ## 🚀 Tech Stack
 
-- **[Vite 7.1.10](https://vitejs.dev/)** - Next generation frontend tooling
+- **[Vite 7.1.12](https://vitejs.dev/)** - Next generation frontend tooling
 - **[React 19.2.0](https://react.dev/)** - UI library with latest features
 - **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Tailwind CSS 4.1.14](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Biome 2.2.6](https://biomejs.dev/)** - Fast formatter and linter
+- **[Tailwind CSS 4.1.16](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Biome 2.3.1](https://biomejs.dev/)** - Fast formatter and linter
 - **[Bun](https://bun.sh/)** - Fast JavaScript runtime and package manager
 
 ## ✨ Features
