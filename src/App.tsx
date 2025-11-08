@@ -1,4 +1,5 @@
 const App = () => {
+  const a = 20;
   return (
     <div className="min-h-screen bg-gray-900 font-mono">
       {/* Header */}

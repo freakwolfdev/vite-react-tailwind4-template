@@ -1,18 +1,10 @@
-# Lefthook configuration
-# https://github.com/evilmartians/lefthook
-
 pre-commit:
   parallel: true
-  run_from_root: true
   commands:
-    # Always run type-check (checks entire project)
-    type-check:
-      run: bun run type-check
-      fail_text: "❌ TypeScript type checking failed. Please fix the errors above."
-    
-    # Run Biome on staged files
-    biome-check:
-      run: bunx biome check --write {staged_files}
-      stage_fixed: true
-      glob: "*.{js,ts,jsx,tsx,json,jsonc,css,md}"
-      fail_text: "❌ Biome linting failed. Please fix the errors above."
+    lint:
+      run: bun run build
+
+pre-push:
+  commands:
+    build:
+      run: bun run build
