@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "biome check ./src",
+    "lint": "biome check ./src --error-on-warnings",
     "format": "biome format --write ./src",
     "fix": "biome check --write ./src",
     "type-check": "tsc --noEmit --project tsconfig.app.json",
