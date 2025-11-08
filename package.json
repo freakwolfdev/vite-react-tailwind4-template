@@ -18,17 +18,17 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.1",
-    "@tailwindcss/vite": "^4.1.16",
+    "@biomejs/biome": "^2.3.4",
+    "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react-swc": "^4.2.0",
+    "@vitejs/plugin-react-swc": "^4.2.1",
     "globals": "16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
-    "vite": "^7.1.12"
+    "vite": "^7.2.2"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,json,jsonc,css,md}": [

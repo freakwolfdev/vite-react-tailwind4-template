@@ -26,7 +26,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Vite 7.1.12</code>
+                  <code className="text-blue-400">Vite 7.2.2</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Next generation frontend tooling with lightning-fast HMR
@@ -46,7 +46,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Tailwind CSS 4.1.16</code>
+                  <code className="text-blue-400">Tailwind CSS 4.1.17</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Utility-first CSS framework with zero-config setup
@@ -56,7 +56,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Biome 2.3.1</code>
+                  <code className="text-blue-400">Biome 2.3.4</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Fast linter and formatter, 10-100x faster than ESLint
@@ -117,9 +117,9 @@ const App = () => {
               </div>
 
               <div className="rounded bg-gray-900 p-4">
-                <code className="text-green-400">$ bun run check</code>
+                <code className="text-green-400">$ bun run type-check</code>
                 <p className="mt-2 text-gray-400 text-sm">
-                  Run linting and type checking
+                  Run TypeScript type checking
                 </p>
               </div>
 

@@ -4,11 +4,11 @@ A modern, fast, and opinionated React development template with the latest tools
 
 ## 🚀 Tech Stack
 
-- **[Vite 7.1.12](https://vitejs.dev/)** - Next generation frontend tooling
+- **[Vite 7.2.2](https://vitejs.dev/)** - Next generation frontend tooling
 - **[React 19.2.0](https://react.dev/)** - UI library with latest features
 - **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Tailwind CSS 4.1.16](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Biome 2.3.1](https://biomejs.dev/)** - Fast formatter and linter
+- **[Tailwind CSS 4.1.17](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Biome 2.3.4](https://biomejs.dev/)** - Fast formatter and linter
 - **[Bun](https://bun.sh/)** - Fast JavaScript runtime and package manager
 
 ## ✨ Features
@@ -60,9 +60,8 @@ bun run preview      # Preview production build
 
 # Code Quality
 bun run lint         # Run Biome linting on ./src
-bun run lint:fix     # Fix linting issues automatically
+bun run fix          # Fix linting issues automatically
 bun run format       # Format code with Biome
-bun run check        # Run all checks and fixes (recommended)
 bun run type-check   # Run TypeScript type checking
 
 # Git Hooks
@@ -126,13 +125,13 @@ The project includes a comprehensive Biome configuration in `biome.json`:
 bun run lint
 
 # Fix linting issues automatically
-bun run lint:fix
+bun run fix
 
 # Format code only
 bun run format
 
-# Run all checks and fixes (recommended)
-bun run check
+# Run type checking
+bun run type-check
 ```
 
 ## 🛡️ Pre-Commit Hooks
@@ -171,8 +170,8 @@ bun run pre-commit
 # Run type checking only
 bun run type-check
 
-# Run all quality checks
-bun run check
+# Run linting
+bun run lint
 ```
 
 ## 📁 Project Structure
@@ -235,7 +234,7 @@ bun run preview
 - Follow **React** best practices
 - Write **accessible** components
 - **Pre-commit hooks** automatically check code quality
-- Run `bun run check` before commits (optional - hooks handle this)
+- Run `bun run type-check` and `bun run lint` before commits (optional - hooks handle this)
 
 ## 🔗 Useful Links
 
