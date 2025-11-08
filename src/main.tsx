@@ -9,6 +9,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <StrictMode>
-    <App isDev={import.meta.env.DEV} />
+    <App />
   </StrictMode>,
 );

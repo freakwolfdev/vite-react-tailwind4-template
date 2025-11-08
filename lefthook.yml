@@ -3,16 +3,16 @@
 
 pre-commit:
   parallel: true
-  jobs:
-    # Always run type-check (checks entire project for type errors)
-    - name: type-check
+  run_from_root: true
+  commands:
+    # Always run type-check (checks entire project)
+    type-check:
       run: bun run type-check
       fail_text: "❌ TypeScript type checking failed. Please fix the errors above."
     
-    # Run Biome on staged files (linting and formatting)
-    - name: biome-check
+    # Run Biome on staged files
+    biome-check:
       run: bunx biome check --write {staged_files}
       stage_fixed: true
-      files: git diff --cached --name-only --diff-filter=ACM
       glob: "*.{js,ts,jsx,tsx,json,jsonc,css,md}"
       fail_text: "❌ Biome linting failed. Please fix the errors above."
