@@ -65,8 +65,7 @@ bun run format       # Format code with Biome
 bun run type-check   # Run TypeScript type checking
 
 # Git Hooks
-bun run prepare      # Install husky git hooks
-bun run pre-commit   # Run pre-commit checks (lint-staged)
+bun run prepare      # Install lefthook git hooks
 ```
 
 ## 🎨 Styling with Tailwind CSS 4
@@ -136,7 +135,7 @@ bun run type-check
 
 ## 🛡️ Pre-Commit Hooks
 
-This project includes **pre-commit hooks** that automatically run before every commit to ensure code quality:
+This project uses **Lefthook** for fast and efficient git hooks that automatically run before every commit to ensure code quality:
 
 ### What Gets Checked
 
@@ -147,9 +146,9 @@ This project includes **pre-commit hooks** that automatically run before every c
 
 ### How It Works
 
-1. **Before every commit**, the system automatically runs:
+1. **Before every commit**, Lefthook automatically runs:
    - `bun run type-check` - TypeScript type checking
-   - `bun run pre-commit` - Biome linting and formatting
+   - `bun run biome check --write` - Biome linting and formatting on staged files
 
 2. **If errors are found**:
    - ❌ Commit is blocked
@@ -159,13 +158,13 @@ This project includes **pre-commit hooks** that automatically run before every c
 
 3. **If all checks pass**:
    - ✅ Commit proceeds normally
-   - 🎨 Files are automatically formatted
+   - 🎨 Files are automatically formatted and staged
 
 ### Manual Testing
 
 ```bash
 # Test pre-commit hooks manually
-bun run pre-commit
+bunx lefthook run pre-commit
 
 # Run type checking only
 bun run type-check
@@ -173,6 +172,13 @@ bun run type-check
 # Run linting
 bun run lint
 ```
+
+### Why Lefthook?
+
+- ⚡ **Faster** - Parallel execution of hooks
+- 🎯 **Simpler** - Single tool replaces Husky + lint-staged
+- 🔧 **Flexible** - Easy to configure and extend
+- 📦 **Lightweight** - Minimal overhead
 
 ## 📁 Project Structure
 
@@ -186,11 +192,10 @@ src/
 Configuration files:
 ├── biome.json       # Biome configuration (linting & formatting)
 ├── .biomeigone      # Biome ignore patterns
+├── lefthook.yml     # Lefthook git hooks configuration
 ├── vite.config.ts   # Vite configuration
 ├── tsconfig.json    # TypeScript configuration
-├── package.json     # Dependencies and scripts
-└── .husky/          # Git hooks directory
-    └── pre-commit   # Pre-commit hook with type checking
+└── package.json     # Dependencies and scripts
 ```
 
 ## 🚀 Deployment

@@ -1,0 +1,14 @@
+# Lefthook configuration
+# https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: type-check
+      run: bun run type-check
+      glob: "*.{ts,tsx}"
+    
+    - name: biome-check
+      run: bun run biome check --write {staged_files}
+      stage_fixed: true
+      glob: "*.{js,ts,jsx,tsx,json,jsonc,css,md}"
