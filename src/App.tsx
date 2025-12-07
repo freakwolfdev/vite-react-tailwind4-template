@@ -1,5 +1,4 @@
 const App = () => {
-  const a = '';
   return (
     <div className="min-h-screen bg-gray-900 font-mono">
       {/* Header */}
@@ -27,7 +26,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Vite 7.2.2</code>
+                  <code className="text-blue-400">Vite 7.2.6</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Next generation frontend tooling with lightning-fast HMR
@@ -37,7 +36,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">React 19.2.0</code>
+                  <code className="text-blue-400">React 19.2.1</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Latest React with concurrent features and improved performance
@@ -57,7 +56,7 @@ const App = () => {
               <div className="rounded border border-gray-700 bg-gray-800 p-4">
                 <div className="mb-2 flex items-center gap-2">
                   <span className="text-green-400">✓</span>
-                  <code className="text-blue-400">Biome 2.3.4</code>
+                  <code className="text-blue-400">Biome 2.3.8</code>
                 </div>
                 <p className="text-gray-400 text-sm">
                   Fast linter and formatter, 10-100x faster than ESLint
