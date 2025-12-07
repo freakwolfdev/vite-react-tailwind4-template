@@ -10,8 +10,7 @@
     "lint": "biome check ./src --error-on-warnings",
     "format": "biome format --write ./src",
     "fix": "biome check --write ./src",
-    "type-check": "tsc --noEmit --project tsconfig.app.json",
-    "prepare": "lefthook install"
+    "type-check": "tsc --noEmit --project tsconfig.app.json"
   },
   "dependencies": {
     "react": "^19.2.1",

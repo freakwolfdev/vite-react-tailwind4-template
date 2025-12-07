@@ -1,7 +1,16 @@
 pre-commit:
-  parallel: true
+  parallel: false
   commands:
-    format:
-      run: bun run format && git add .
-    lint:
+    biome-check:
       run: bun run lint
+    biome-format:
+      run: bun run format
+    type-check:
+      run: bun run type-check
+    build:
+      run: bun run build
+
+pre-push:
+  commands:
+    fix:
+      run: bun run fix
