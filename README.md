@@ -4,11 +4,11 @@ A modern, fast, and opinionated React development template with the latest tools
 
 ## 🚀 Tech Stack
 
-- **[Vite 7.3.1](https://vitejs.dev/)** - Next generation frontend tooling
+- **[Vite 8.0.7](https://vitejs.dev/)** - Next generation frontend tooling
 - **[React 19.2.4](https://react.dev/)** - UI library with latest features
-- **[TypeScript 5.9.3](https://www.typescriptlang.org/)** - Type-safe JavaScript
-- **[Tailwind CSS 4.1.18](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Biome 2.3.13](https://biomejs.dev/)** - Fast formatter and linter
+- **[TypeScript 6.0.2](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Tailwind CSS 4.2.2](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[Biome 2.4.10](https://biomejs.dev/)** - Fast formatter and linter
 - **[Bun](https://bun.sh/)** - Fast JavaScript runtime and package manager
 
 ## ✨ Features
@@ -59,13 +59,13 @@ bun run build        # Build for production (TypeScript + Vite)
 bun run preview      # Preview production build
 
 # Code Quality
-bun run lint         # Run Biome linting on ./src
+bun run check        # Run Biome checks on ./src
 bun run fix          # Fix linting issues automatically
 bun run format       # Format code with Biome
 bun run type-check   # Run TypeScript type checking
 
 # Git Hooks
-bun run prepare      # Install lefthook git hooks
+bunx lefthook install # Install lefthook git hooks
 ```
 
 ## 🎨 Styling with Tailwind CSS 4
@@ -121,7 +121,7 @@ The project includes a comprehensive Biome configuration in `biome.json`:
 
 ```bash
 # Check for issues (linting only)
-bun run lint
+bun run check
 
 # Fix linting issues automatically
 bun run fix
@@ -170,7 +170,7 @@ bunx lefthook run pre-commit
 bun run type-check
 
 # Run linting
-bun run lint
+bun run check
 ```
 
 ### Why Lefthook?
@@ -239,7 +239,7 @@ bun run preview
 - Follow **React** best practices
 - Write **accessible** components
 - **Pre-commit hooks** automatically check code quality
-- Run `bun run type-check` and `bun run lint` before commits (optional - hooks handle this)
+- Run `bun run type-check` and `bun run check` before commits (optional - hooks handle this)
 
 ## 🔗 Useful Links
 
